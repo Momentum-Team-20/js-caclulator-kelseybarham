@@ -25,7 +25,15 @@ console.log(displayContainer)
 
 }
 
+let numbers = document.querySelectorAll('.number')
+console.log(numbers)
+
+for (let number of numbers) {
+    number.addEventListener('click', (event) => {
+        console.log(event.target.innerText)
+    buttonPress(number.innerText)
+})
+}
 
 
-buttonPress(9);
 
